@@ -1,0 +1,117 @@
+:root{
+    --bgcolor: #123456;
+    --textcolor: #cac2de;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: var(--bgcolor);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: var(--textcolor);
+    font-weight: bold;
+    text-align: center;
+}
+
+.scoring-board{
+    margin:  0 40px;
+    padding: 20px 80px;
+    border: 3px solid ;
+    border-radius: 10px;
+}
+
+.game-board{
+    display:  flex;
+    justify-content: space-between;
+    height: 170px;
+    border-bottom: 3px solid var(--textcolor);
+}
+
+.Foul-shot{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: -80px;
+}
+
+.possesion-bonus{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-bottom: 3px solid var(--textcolor);
+}
+
+.home-score span,
+.guest-score span{
+    font-size: 30px;
+}
+
+.home-score p,
+.guest-score p{
+    font-size: 80px;
+    margin-top: 0px;
+}
+
+.time-remaining{
+    font-size: 100px;
+    margin-top: -120px;
+}
+
+.period{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    font-size: 30px;
+    margin-top: -120px;
+}
+
+.poss{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+   
+}
+
+.control-board{
+    margin: 30px ;
+    border: 2px solid var(--textcolor);
+    border-radius: 5px;
+}
+
+/* .control-board h1{
+    border-bottom: 1px solid var(--textcolor);
+} */
+
+.controls{
+    /* border: 1px solid; */
+    margin: 0 20px;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.controls button{
+    margin: 10px;
+    width: 100px;
+    padding: 5px 0;
+    border-radius: 5px;
+    border: 0;
+    background-color: var(--textcolor);
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.controls .Home h2{
+    border-bottom: 1px solid;  
+    padding: 0 10px 5px 10px;
+}
+
+.controls .Time .home-score button{
+    /* padding: 30px; */
+    width: 140px;
+}
+
+.controls .Time .reset button{
+    /* padding: 30px; */
+    width: 305px;
+}

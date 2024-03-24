@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Score Board</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>BASKETBALL SCOREBOARD</h1>
+    <div class="scoring-board">
+        <div class="game-board">
+            <div class="home-score">
+                <span>Home</span>
+                <p id="home">00</p>
+            </div>
+            <div class="time">
+                <div class="time-remaining">
+                    <p>00:00</p>
+                </div>
+                <div class="period">
+                    
+                    <p>Period</p><p>0</p>
+                </div>
+            </div>
+            <div class="guest-score">
+                <span>Guest</span>
+                <p id="guest">00</p>
+            </div>
+        </div>
+        <div class="possesion-bonus">
+            <div class="home-score">
+                <span>Bonus</span>
+            </div>
+            <div class="home-score poss">
+                <span><input type="radio" name="possesion" value="Home" id="poss-home"></span>
+                <span>Poss</span>
+                <span><input type="radio" name="possesion" value="Guest" id="poss-guest"></span>
+            </div>
+            <div class="home-score">
+                <span>Bonus</span>
+            </div>
+        </div>
+        <div class="Foul-shot">
+            <div class="home-score">
+                <span>Fouls</span>
+                <p>00</p>
+            </div>
+            <div class="home-score">
+                <span>Shot Clock</span>
+                <p>00</p>
+            </div>
+            <div class="home-score">
+                <span>Fouls</span>
+                <p>00</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="control-board">
+        <h1>Controls</h1>
+        <div class="controls">
+             <!-- this is for the home team -->
+            <div class="Home">
+                <div class="home-score">
+                    <h2 id="homes">Home : 0</h2>
+                    <button onclick="home1Points()">+1</button>
+                    <button onclick="home2Points()">+2</button>
+                    <button onclick="home3Points()">+3</button>
+                </div>
+                <div class="fouls">
+                    <button>FOULS</button>
+                    <button>POSS</button>
+                </div>
+                
+            </div>
+            <!-- this is for the timer -->
+            <div class="Home Time"> 
+                <div class="home-score">
+                    <h2>Time</h2>
+                    <button>START</button>
+                    <button>STOP</button>
+                    
+                </div>
+                <div class="home-score">
+                    <button>PERIOD</button>
+                    <button>SHOT CLOCK</button>
+                </div>
+                <div class="reset">
+                    <button>RESET</button>
+                </div>
+                
+            </div>
+            <!-- this is for the guest team -->
+            <div class="Home">
+                <div class="home-score">
+                    <h2 id="guests">Guest : 0</h2>
+                    <button onclick="guest1Points()">+1</button>
+                    <button onclick="guest2Points()">+2</button>
+                    <button onclick="guest3Points()">+3</button>
+                </div>
+                <div class="fouls">
+                    <button>FOULS</button>
+                    <button>POSS</button>
+                </div>
+                
+            </div>
+           
+            
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
